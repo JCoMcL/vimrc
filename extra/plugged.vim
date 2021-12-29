@@ -4,7 +4,7 @@ call plug#begin(condirs#data() . "/plugged")
 Plug 'qwertologe/nextval.vim'
 " Plug 'tpope/vim-speeddating' merge with nextval
 Plug 'tpope/vim-commentary'
-" Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',

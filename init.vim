@@ -1,5 +1,5 @@
 runtime extra/plugged.vim
-" runtime extra/ale.vim
+runtime extra/ale.vim
 
 "TODO vim-clap
 "TODO floating_win configuration
@@ -27,7 +27,6 @@ nnoremap  :%s//g<Left><Left>
 " reload configuration
 nnoremap <F5> :source $MYVIMRC<CR>
 
-" TODO remap to the actual function, not just the keys
 inoremap <M-Tab> 
 inoremap <M-S-Tab> 
 
