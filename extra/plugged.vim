@@ -1,16 +1,17 @@
 " Specify a directory for plugins
 call plug#begin(condirs#data() . "/plugged")
 
-Plug 'qwertologe/nextval.vim'
+" Plug 'qwertologe/nextval.vim'
 " Plug 'tpope/vim-speeddating' merge with nextval
 Plug 'tpope/vim-commentary'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }"
-Plug 'jiangmiao/auto-pairs'
+"Plug 'autozimu/LanguageClient-neovim', {
+    "\ 'branch': 'next',
+    "\ 'do': 'bash install.sh',
+    "\ }"
+Plug 'tpope/vim-sleuth'
+" Plug 'jiangmiao/auto-pairs'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Plug 'junegunn/vim-easy-align'

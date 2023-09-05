@@ -1,5 +1,5 @@
-runtime extra/plugged.vim
 runtime extra/ale.vim
+runtime extra/plugged.vim
 
 "TODO vim-clap
 "TODO floating_win configuration
@@ -52,10 +52,15 @@ set softtabstop=0
 set shiftwidth=0
 set expandtab&
 
+function! SynStack()                                                            
+    let l:s = synID(line('.'), col('.'), 1)                                       
+    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
+endfun
+
 colo xvi
 
 "autocmd BufWritePost * silent exec "!cat <afile> | xclip -sel clipboard"
-runtime extra/langserver.vim
+"runtime extra/langserver.vim
 " runtime extra/airline.vim
 
 endif
